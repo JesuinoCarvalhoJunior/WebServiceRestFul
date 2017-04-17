@@ -2,10 +2,6 @@ package br.com.livro.servlets;
 
 import java.io.IOException;
 import java.rmi.ServerException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/hello")
 public class HelloServlets extends HttpServlet {
