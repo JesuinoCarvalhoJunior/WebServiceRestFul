@@ -103,7 +103,5 @@ public class CarrosServlet extends HttpServlet {
 				ServletUtil.writeJSON(resp, json);
 			}
 		}
-
 	}
-
 }
