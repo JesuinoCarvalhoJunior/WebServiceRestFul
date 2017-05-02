@@ -13,9 +13,10 @@ import org.codehaus.jettison.mapped.MappedXMLStreamWriter;
 
 import br.com.livro.domain.Carro;
 import br.com.livro.domain.ListaCarros;
+import br.com.livro.domain.Response;
 
 // classe para gerar XML.
-// o xml gerado precisa ser enviado como resposta da requisicao HTTP que é feita no servlet
+// o xml gerado precisa ser enviado como resposta da requisicao HTTP que Ã© feita no servlet
 // para isso sera utilizado a class ServletUtil para escrever o xml ou json
 
 public class JAXBUtil {
@@ -29,8 +30,8 @@ public class JAXBUtil {
 
 	static {
 		try {
-			// Informa ao JAXB que é para gerar XML destas classes.
-			context = JAXBContext.newInstance(ListaCarros.class, Carro.class);
+			// Informa ao JAXB que Ã© para gerar XML destas classes.
+			context = JAXBContext.newInstance(Response.class, ListaCarros.class, Carro.class);
 		} catch (JAXBException e) {
 			throw new RuntimeException(e);
 		}
